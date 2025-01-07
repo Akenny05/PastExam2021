@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PastExam2021"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
     <Grid x:Name="tbxTransactionAmount">
         <CheckBox x:Name="cbCurrentAccount" Content="Current Accounts" HorizontalAlignment="Left" Margin="64,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.531,0.581"/>
         <CheckBox x:Name="cbSavings" Content="Savings Accounts" HorizontalAlignment="Left" Margin="192,55,0,0" VerticalAlignment="Top"/>
@@ -27,7 +28,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="497,233,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <TextBox x:Name="tbxTransactionAmount1" HorizontalAlignment="Left" Margin="497,277,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnDeposit" Content="Deposit&#xD;&#xA;" HorizontalAlignment="Left" Margin="665,93,0,0" VerticalAlignment="Top" Height="20"/>
-        <Button x:Name="btnWithdraw" Content="Withdraw&#xD;&#xA;" HorizontalAlignment="Left" Margin="665,122,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="20"/>
+        <Button x:Name="btnWithdraw" Content="Withdraw&#xD;&#xA;" HorizontalAlignment="Left" Margin="665,122,0,0" VerticalAlignment="Top"  Height="20"/>
         <Button x:Name="btnInterest" Content="Interest&#xD;&#xA;" HorizontalAlignment="Left" Margin="665,152,0,0" VerticalAlignment="Top" Height="18" RenderTransformOrigin="0.447,0.44"/>
 
     </Grid>

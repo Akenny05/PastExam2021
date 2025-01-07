@@ -18,19 +18,30 @@ namespace PastExam2021
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Account> accounts = new List<Account>();
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //Create 4 accounts 
+            CurrentAccount ca1 = new CurrentAccount("Joe", "Doe" , 1000, DateTime.Now.AddYears(-2) , "123456");
+            CurrentAccount ca2 = new CurrentAccount("Jane", "Doe", 2000, DateTime.Now.AddYears(-3) , "123576");
 
-        }
+            SavingsAccount sa1 = new SavingsAccount("John" , "Smith" , 3000 , DateTime.Now.AddYears(-4), "456732");
+            SavingsAccount sa2 = new SavingsAccount("Jane", "Smith", 4000, DateTime.Now.AddYears(-5) , "785873");
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            
+            //Add to account list 
+            accounts.Add(ca1);
+            accounts.Add(ca2);
+            accounts.Add(sa1);
+            accounts.Add(sa2);
+
+            // Display 
+            lbxAccounts.ItemsSource = accounts;
         }
     }
 }
