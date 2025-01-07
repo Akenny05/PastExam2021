@@ -1,0 +1,34 @@
+﻿<Window x:Class="PastExam2021.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PastExam2021"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="64,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.531,0.581"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="161,55,0,0" VerticalAlignment="Top"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="54,75,469,33"/>
+        <Label Content="Account Details&#xD;&#xA;" HorizontalAlignment="Left" Margin="373,52,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="First Name&#xD;&#xA;" HorizontalAlignment="Left" Margin="373,81,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Last Name&#xD;&#xA;" HorizontalAlignment="Left" Margin="374,110,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label Content="Balance&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Account Type&#xD;&#xA;" HorizontalAlignment="Left" Margin="375,169,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label Content="Balance &#xD;&#xA;" HorizontalAlignment="Left" Margin="375,199,0,0" VerticalAlignment="Top" Height="29" RenderTransformOrigin="0.529,0.238"/>
+        <Label Content="Interest Date&#xD;&#xA;" HorizontalAlignment="Left" Margin="373,228,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label Content="Transaction Amount&#xD;&#xA;" HorizontalAlignment="Left" Margin="373,274,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="522,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="497,85,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="497,115,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="497,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="497,174,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="497,204,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="497,233,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="497,277,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Deposit&#xD;&#xA;" HorizontalAlignment="Left" Margin="664,81,0,0" VerticalAlignment="Top" Height="24"/>
+        <Button Content="Withdraw&#xD;&#xA;" HorizontalAlignment="Left" Margin="664,113,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="19"/>
+        <Button Content="Interest&#xD;&#xA;" HorizontalAlignment="Left" Margin="665,146,0,0" VerticalAlignment="Top" Height="18"/>
+
+    </Grid>
+</Window>
