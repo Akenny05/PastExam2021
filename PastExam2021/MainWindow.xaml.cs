@@ -43,5 +43,25 @@ namespace PastExam2021
             // Display 
             lbxAccounts.ItemsSource = accounts;
         }
+
+        private void lbxAccounts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //determine what account is selected 
+            Account selected = lbxAccounts.SelectedItem as Account;
+
+            //check for null 
+            if (selected != null)
+            {
+                //update display 
+
+                tblkFirstName.Text = selected.FirstName;
+                tblkLastName.Text = selected.LastName;
+                tblkBalance.Text = selected.Balance.ToString("c");
+                tblkAccountType.Text = selected.GetType().Name;
+                tblkInterestdate.Text = selected.InterestDate.ToString("d");
+            }
+
+           
+        }
     }
 }
